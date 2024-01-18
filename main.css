@@ -1,0 +1,374 @@
+:root{
+  --palette-backgroundPage: rgb(55, 55, 55);
+  --palette-backgroundHeaderFooter: #8c8a8a; 
+  --palette-ecritureHeaderFooter: #363636;
+  --palette-backgroundFormTable: rgba(0, 0, 0, 0.5);
+
+  --palette-backgroundPage2: #a0a0a0;
+  --palette-backgroundHeaderFooter2: #e8e8e8; 
+  --palette-ecritureHeaderFooter2: #949494;
+  --palette-backgroundFormTable2: rgba(93, 91, 91, 0.5);
+}
+
+:root{
+  --backgroundPage: var(--palette-backgroundPage);
+  --backgroundHeaderFooter: var(--palette-backgroundHeaderFooter); 
+  --ecritureHeaderFooter: var(--palette-ecritureHeaderFooter);
+  --backgroundFormTable: var(--palette-backgroundFormTable);
+}
+
+
+@media (prefers-color-scheme: light){
+  :root{
+    --backgroundPage: var(--palette-backgroundPage2);
+    --backgroundHeaderFooter: var(--palette-backgroundHeaderFooter2); 
+    --ecritureHeaderFooter: var(--palette-ecritureHeaderFooter2);
+    --backgroundFormTable: var(--palette-backgroundFormTable2); 
+  }
+}
+
+/*@media screen and{
+  
+}*/
+
+html{
+    background-color:var(--backgroundPage); /* Couleur de fond de la page */
+    font-family: 'Titan One', cursive; /* Police de caractère */
+}
+
+.header
+{
+  background-color: var(--backgroundHeaderFooter);
+  display: flex;/* Utilisation de flexbox pour aligner les éléments horizontalement */
+  justify-content: space-between;/* Espacement égal entre les éléments */
+  align-items: center;/* Centre les éléments verticalement */
+  padding: 20px;/* Ajoutez de la marge intérieure pour l'apparence et l'espacement */
+  width: 100%;/* Occupe toute la largeur de la page */
+  height: auto;
+  position: fixed; /* Fixe la barre de navigation en haut de la page */
+}
+
+.navbar ul{
+  margin-right: 500px; /* Marge à droite pour espacer les éléments de la liste */
+}
+
+.navbar li{
+    display: inline; /* Affiche les éléments de la liste en ligne côte à côte */
+    margin-right: 20px; /* Espacement entre les éléments de la liste */
+    transition : color 0.3s;; /* Ajoute une transition de couleur de 0.5s */
+}
+
+.navbar a{
+    color: var(--ecritureHeaderFooter); /* Couleur du texte */
+    font-size: x-large;/* Taille de la police */
+    text-decoration: none; /* Supprime les soulignements des liens */
+}
+
+.navbar a:hover{
+    color: orange; /* Change la couleur du texte au survol */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+    font-size: xx-large; /*Taille de la police*/
+    font-weight: bold; /*Gras*/
+  }
+
+#logo {
+    border-radius: 50%; /* Définir la forme du logo */
+    width: 70px; 
+    height: 70px; 
+    margin-left: 50px; 
+    margin-right: 30px; 
+  }
+
+img{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+body{
+    justify-content: space-between;
+    margin: 0;/* Supprime les marges par défaut */
+    overflow-x: hidden; /* Supprime la barre de défilement horizontale */
+}
+
+.main-container {
+    display: flex; 
+}
+  
+.main-text {
+    color: white;
+    text-align: center;
+    margin-left: 200px; /* Marge à gauche pour espacer le texte de l'image */
+    margin-right: 170px; /* Marge à droite pour espacer le texte de l'image */
+    margin-top: 50px; /* Marge en haut pour espacer le texte de l'image */
+}
+
+#mainText1{
+    font-size: 70px; /* Taille de la police */
+    margin-bottom: 30px; /* Marge en bas pour espacer le texte de l'image */
+}
+
+#mainText2{
+    font-size: 15px; /* Taille de la police */
+    color: orange;
+}
+
+.action-button{
+    margin-left:180px;
+    background-color: white;
+    color: #363636;
+    text-decoration: none;
+    padding: 10px 40px; /* Ajoute un rembourrage pour améliorer l'apparence */
+    border: radius 10px;
+    border-bottom: 5px solid #969696; /* Ajoute une bordure inférieure de 5px */
+    transition: all .1s;
+    -webkit-transition: all .1s; 
+    float: left;
+}
+
+.action-button:active{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0,5px);
+    border-bottom:1px solid;
+}
+
+.main-img {
+    margin-top: 70px; 
+    margin-left: 0px; 
+    align-items: center;                                                                 
+}
+
+#monkey{
+    width: 500px; 
+    height:auto;
+    border-bottom-left-radius: 50%; 
+    border-bottom-right-radius: 50%;
+    margin-bottom: 100px; /
+}
+
+footer{
+    background-color: var(--backgroundHeaderFooter); 
+    padding: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+footer p{
+    color: var(--ecritureHeaderFooter);
+}
+  
+  
+  .image-container {
+    display: flex;
+    justify-content: space-evenly; /* Espacement égal entre les éléments */
+  }
+  
+  .image-container div {
+    text-align: center; 
+  }
+  
+  .image-container img {
+    width: 80px; 
+    height: auto;
+    margin: 10px; 
+  }
+  
+  #mentions {
+    text-align: center; 
+    margin-top: 20px; 
+  }
+
+
+  /*------------------------------------------------------------*/
+
+
+  .P-main
+  {
+    color: white;
+    
+  }
+
+  .P-main-text
+  {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .P-main-text-section-1 {
+    display: flex; 
+    align-items: center; 
+    justify-content: left;
+  }
+
+  .P-main-text-section-2 {
+    display: flex; 
+    align-items: center; 
+    justify-content: right;
+  }
+
+  .P-main-text-section-3 {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; /* Centrer les éléments horizontalement */
+  }
+
+  h1{
+    color: orange;
+    font-size: xx-large;
+  }
+
+  p{
+    color: white;
+    font-size: medium;
+  }
+  
+  .element{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 40px;
+  }
+
+  #Kong-F{
+    width: 500px;
+    height: auto;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-right: 5px;
+  }
+
+  #Omega{
+    width: 550px;
+    height: auto;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-left: 50px;
+    margin-bottom: 60px;
+  }
+
+/*------------------------------------------------------------*/
+
+.I-main-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;                                                        
+}
+
+#kong1{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#kong2{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#kong3{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#kong4{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#omega2{
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+#omega3{
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.I-main-container
+{
+  padding: 50px;
+}
+
+.I-main-text p
+{
+  color: orange;
+  text-align: center;
+  padding: 50px;
+  font-size: x-large;
+  
+}
+
+form{
+    color: white;
+    border: solid white;
+    display: flex; /* Pour empiler les éléments du formulaire */
+    align-items: center;
+    flex-direction: column; /* Pour empiler les éléments du formulaire */
+    background-color: var(--backgroundFormTable); 
+    border-radius: 10px; /* Rayon de bordure pour le formulaire */
+    padding: 20px; /* Ajout d'un rembourrage pour le formulaire */
+    max-width: 500px; /* Largeur maximale pour le formulaire */
+    margin: 0 auto; /* Centrer le formulaire */
+    margin-bottom: 50px; 
+}
+
+fieldset{
+    display: flex;
+    text-align: center;
+    flex-direction: column; /* Pour empiler les éléments du formulaire verticalement */
+    border: none; 
+}
+
+form input{
+    background-color: white;
+    border-color: black;
+    color: orange;
+}
+
+#sub_btn{
+    font-family: 'Titan One', cursive;
+    margin-left: 7.5px;
+    background-color: white;
+    color: #363636;
+    text-decoration: none;
+    padding: 10px 40px;
+    border: radius 10px;
+    border-bottom:5px solid #969696;
+    transition: all .1s; 
+    -webkit-transition: all .1s;
+    float: left;
+}
+
+#sub_btn:active{
+    transform: translate(0,5px);
+    -webkit-transform: translate(0,5px);
+    border-bottom:1px solid;
+}
+
+label{
+    margin: 5px 0; /* Ajout d'un espace entre les champs de saisie */
+    padding: 5px; 
+}
+table {
+    color: white;
+    border-collapse: collapse;/* Supprime les bordures entre les cellules */
+    background-color: var(--backgroundFormTable); 
+    margin: 0 auto; 
+}
+
+table th{
+    font-size: medium;
+    border: solid white;
+    width: 150px;
+    height: 50px;
+}
+
+td{
+    border: solid white;
+    text-align: center;
+}
+
